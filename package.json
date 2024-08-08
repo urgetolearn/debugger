@@ -17,7 +17,7 @@
         {
           "id": "hyperledger-fabrics",
           "title": "Hyperledger Fabrics",
-          "icon": "media/white-star.png" 
+          "icon": "media/white-star.png"
         }
       ]
     },
@@ -40,12 +40,13 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.54.0",
+    "@babel/types": "^7.25.2",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
+    "@types/vscode": "^1.54.0",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
   }
 }
