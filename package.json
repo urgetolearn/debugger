@@ -20,8 +20,10 @@
           "title": "Hyperledger Fabrics",
           "icon": "media/white-star.png"
         }
+        
       ]
     },
+    
     "views": {
       "hyperledger-fabrics": [
         {
@@ -31,6 +33,30 @@
         {
           "id": "statedb",
           "name": "State Database"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "Connection-profile.button1",
+        "title": "📁"
+      },
+      {
+        "command": "Connection-profile.button2",
+        "title": "📝"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "Connection-profile.button1",
+          "when": "view == Connection-profile",
+          "group": "navigation"
+        },
+        {
+          "command": "Connection-profile.button2",
+          "when": "view == Connection-profile",
+          "group": "navigation"
         }
       ]
     }

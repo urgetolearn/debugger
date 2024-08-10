@@ -8,19 +8,31 @@ const vscode = require('vscode');
  */
 function activate(context) {
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "debugger" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
 	const disposable = vscode.commands.registerCommand('debugger.helloWorld', function () {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from Debugger!');
 	});
+	const disposable1 = vscode.commands.registerCommand(
+		"Connection-profile.button1",
+		function () {
+		  vscode.window.showInformationMessage("Clicked button1!");
+		  console.log("Button1");
+		}
+	  );
+	  const disposable2 = vscode.commands.registerCommand(
+		"Connection-profile.button2",
+		function () {
+		  vscode.window.showInformationMessage("Clicked button2!");
+		  console.log("Button2");
+		}
+	  );
+	
+	  context.subscriptions.push(disposable1);
+	  context.subscriptions.push(disposable2);
 
 	context.subscriptions.push(disposable);
 }
