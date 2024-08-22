@@ -33,6 +33,10 @@
         {
           "id": "statedb",
           "name": "State Database"
+        },
+        {
+          "id": "new-view",
+          "name": "New View"
         }
       ]
     },
